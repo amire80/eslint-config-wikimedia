@@ -2,7 +2,7 @@
 
 ( function () {
 	// not-es6
-	// eslint-disable-next-line no-restricted-syntax
+	// eslint-disable-next-line es/no-array-prototype-includes
 	[].includes();
 	// eslint-disable-next-line es/no-object-entries
 	Object.entries();
@@ -12,13 +12,13 @@
 	Object.values();
 
 	// not-es2016
-	// eslint-disable-next-line no-restricted-properties
+	// eslint-disable-next-line es/no-string-prototype-padstart-padend
 	''.padStart();
 
 	// not-es2017 introduces no rules
 
 	// not-es2018
-	// eslint-disable-next-line no-restricted-properties
+	// eslint-disable-next-line es/no-string-prototype-trimstart-trimend
 	''.trimEnd();
 	// eslint-disable-next-line es/no-object-fromentries
 	Object.fromEntries();
