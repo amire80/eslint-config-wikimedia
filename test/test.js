@@ -84,6 +84,15 @@ configs.forEach( ( configPath ) => {
 			);
 		}
 
+		if ( configName === 'client-es5' ) {
+			// Load the rules for ES5 when testing client
+			Object.assign(
+				rules,
+				getRules( require( 'eslint-plugin-es/lib/configs/no-new-in-es2015' ) ),
+				getRules( require( '../language/es5' ) )
+			);
+		}
+
 		if ( upstreamConfigsToTest.includes( configName ) ) {
 			rules = Object.assign(
 				{},

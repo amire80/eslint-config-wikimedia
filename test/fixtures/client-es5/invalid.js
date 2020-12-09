@@ -7,16 +7,61 @@
 	document.appendChild( node.parentElement );
 
 	// not-es5
+	// The following features already trigger parser errors
+	// <!-- eslint-disable-next-line es/no-arrow-functions -- >
+	// <!-- eslint-disable-next-line es/no-binary-numeric-literals -->
+	// <!-- eslint-disable-next-line es/no-block-scoped-functions -->
+	// <!-- eslint-disable-next-line es/no-block-scoped-variables -->
+	// <!-- eslint-disable-next-line es/no-classes -- >
+	// <!-- eslint-disable-next-line es/no-computed-properties -- >
+	// <!-- eslint-disable-next-line es/no-default-parameters -- >
+	// <!-- eslint-disable-next-line es/no-destructuring -- >
+	// <!-- eslint-disable-next-line es/no-for-of-loops -- >
+	// <!-- eslint-disable-next-line es/no-generators -- >
+	// <!-- eslint-disable-next-line es/no-modules -- >
+	// <!-- eslint-disable-next-line es/no-new-target -- >
+	// <!-- eslint-disable-next-line es/no-object-super-properties -- >
+	// <!-- eslint-disable-next-line es/no-octal-numeric-literals -- >
+	// <!-- eslint-disable-next-line es/no-property-shorthands -- >
+	// <!-- eslint-disable-next-line es/no-regexp-prototype-flags -- >
+	// <!-- eslint-disable-next-line es/no-regexp-u-flag -- >
+	// <!-- eslint-disable-next-line es/no-regexp-y-flag -- >
+	// <!-- eslint-disable-next-line es/no-rest-parameters -- >
+	// <!-- eslint-disable-next-line es/no-spread-elements -- >
+	// <!-- eslint-disable-next-line es/no-subclassing-builtins -- >
+	// <!-- eslint-disable-next-line es/no-template-literals -- >
+	// <!-- eslint-disable-next-line es/no-unicode-codepoint-escapes -- >
+	// Globals which won't exist
+	// <!-- eslint-disable-next-line es/no-map -- >
+	// <!-- eslint-disable-next-line es/no-promise -- >
+	// <!-- eslint-disable-next-line es/no-proxy -- >
+	// <!-- eslint-disable-next-line es/no-reflect -- >
+	// <!-- eslint-disable-next-line es/no-set -- >
+	// <!-- eslint-disable-next-line es/no-symbol -- >
+	// <!-- eslint-disable-next-line es/no-typed-arrays -- >
+	// <!-- eslint-disable-next-line es/no-weak-map -- >
+	// <!-- eslint-disable-next-line es/no-weak-set -- >
+
+	// eslint-disable-next-line es/no-array-from
+	Array.from();
+	// eslint-disable-next-line es/no-array-of
+	Array.of();
+	// eslint-disable-next-line es/no-array-prototype-copywithin
+	[].copyWithin();
+	// eslint-disable-next-line es/no-array-prototype-fill
+	[].fill();
+	// eslint-disable-next-line es/no-array-prototype-findindex
+	[].findIndex();
+	// eslint-disable-next-line es/no-array-prototype-keys
+	[].keys();
+	// eslint-disable-next-line es/no-array-prototype-values
+	[].values();
 	// eslint-disable-next-line es/no-string-prototype-codepointat
 	''.codePointAt();
 	// eslint-disable-next-line es/no-array-prototype-keys
 	[].keys();
 	// eslint-disable-next-line es/no-array-prototype-entries
 	[].entries();
-	// eslint-disable-next-line es/no-array-from
-	Array.from();
-	// eslint-disable-next-line es/no-array-of
-	Array.of();
 	// eslint-disable-next-line es/no-math-acosh
 	Math.acosh();
 	// eslint-disable-next-line es/no-math-asinh
@@ -75,8 +120,20 @@
 	Object.getOwnPropertySymbols();
 	// eslint-disable-next-line es/no-object-is
 	Object.is();
+	// eslint-disable-next-line es/no-object-setprototypeof
+	Object.setPrototypeOf();
 	// eslint-disable-next-line es/no-string-fromcodepoint
 	String.fromCodePoint();
+	// eslint-disable-next-line es/no-string-prototype-endswith
+	''.endsWith();
+	// eslint-disable-next-line es/no-string-prototype-includes
+	''.includes();
+	// eslint-disable-next-line es/no-string-prototype-normalize
+	''.normalize();
+	// eslint-disable-next-line es/no-string-prototype-repeat
+	''.repeat();
+	// eslint-disable-next-line es/no-string-prototype-startswith
+	''.startsWith();
 	// eslint-disable-next-line es/no-string-raw
 	String.raw();
 
