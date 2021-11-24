@@ -1,0 +1,17 @@
+object:
+  plain-scalar: 'string' # eslint-disable-line yml/plain-scalar, yml/quotes
+  block-sequence: [ # eslint-disable-line yml/block-sequence
+    string
+  ]
+  flow-sequence-bracket-spacing: [string] # eslint-disable-line yml/flow-sequence-bracket-spacing
+  # eslint-disable-next-line yml/flow-mapping-curly-spacing
+  flow-mapping-bracket-spacing: {string: string}
+  key-spacing : string # eslint-disable-line yml/key-spacing
+  no-irregular-whitespace: d # eslint-disable-line yml/no-irregular-whitespace
+  # eslint-disable-next-line yml/spaced-comment
+  #Spaced
+  : empty # eslint-disable-line yml/no-empty-key
+  block-sequence-hyphen-indicator-newline:
+    # eslint-disable-next-line yml/block-sequence-hyphen-indicator-newline
+    -
+      string
